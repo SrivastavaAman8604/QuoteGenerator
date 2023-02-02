@@ -1,20 +1,23 @@
-.App {
+@media only screen and (min-width: 600px) {.App{
+  text-align: center;
+  background-image: url(https://img.freepik.com/free-photo/wall-blank-paper-frame-with-acorn-decoration_53876-105706.jpg?w=2000);
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: center;
+  background-size: 1550px 800px;
+  background-attachment: fixed;
+}
+.box {
+  top: 30%;
+  left: 37%;
+  background-color: transparent;
+  width: 400px;
+  height: 300px;
+  color: black;
+  position: absolute;
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
 .App-header {
-  background-color: #282c34;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -24,15 +27,40 @@
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media only screen and (max-width: 600px) {
+  .App{
+    text-align: center;
+    justify-content: center;
+    background-image: url(https://img.freepik.com/free-photo/wall-blank-paper-frame-with-acorn-decoration_53876-105706.jpg?w=2000);
+    background-repeat: no-repeat;
+    background-size: contain;
+    max-height: 1200px;
+    margin: 0%;
   }
-  to {
-    transform: rotate(360deg);
+  .box{
+    background-color: transparent;
   }
+  .App-header {
+    min-height: 30vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: black;
+  }
+} 
+
+
+
+
+
+button{
+  width: 60px;
+  height: 30px;
+  background-color: #141212;
+  border-radius: 5px;
+  color: white;
 }
